@@ -24,8 +24,6 @@ print("<table style=\"border:black solid 1px\">\n")
 for i, td in enumerate(g.doc.select('//ul[@class="features__list"]//dl')):
     for i2, td2 in enumerate(g.doc.select('//ul[@class="features__list"]//dd')):
         if i == i2:
-            #tt2 = '<tr><td style=\"border:black solid 1px\"> %s </td>' % td.text().lstrip(':')
-            
             s = td.text().lstrip(':')
             temp = s.find(':')
             index = temp
